@@ -12,11 +12,11 @@
 // ⚠️ DATOS DE EJEMPLO — reemplaza con la información real de tus mascotas
 const mascotas = [
   {
-    nombre: 'Nombre de mascota 1',
+    nombre: 'Rocko',
     especie: 'Perro',
-    edad: '3 años',
+    edad: '14 años',
     imagen: 'img/mascota1/foto1.jpg', // reemplazar por tu foto
-    descripcion: 'Escribe aquí una pequeña descripción de tu mascota: cómo llegó a la familia, alguna anécdota o lo que la hace especial.',
+    descripcion: 'Rocko llego de sorpresa a nuestras vidas y desde entonces nos ha llenado de alegría. Es un perro muy juguetón y le encanta estar rodeado de su familia.',
     personalidad: '🐾 Juguetón, cariñoso y un poco travieso',
     gustos: ['Las siestas al sol', 'Perseguir la pelota', 'Los paseos largos'],
   },
