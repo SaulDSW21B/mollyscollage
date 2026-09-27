@@ -1,0 +1,114 @@
+/* ============================================
+   MIS MASCOTAS — estilos de mascotas.html
+   ============================================ */
+
+.page-header {
+  padding: 3rem 0 1rem;
+  text-align: center;
+}
+
+.page-header h1 { color: var(--coral-dark); font-size: clamp(2rem, 4vw, 2.8rem); }
+.page-header p { max-width: 52ch; margin-inline: auto; }
+
+.mascotas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.2rem;
+  padding: 2rem 0 4rem;
+}
+
+.mascota-card {
+  background: var(--cream-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mascota-card:nth-child(3n+1) { transform: rotate(-1.5deg); }
+.mascota-card:nth-child(3n+2) { transform: rotate(1.2deg); }
+.mascota-card:nth-child(3n)   { transform: rotate(-0.8deg); }
+
+.mascota-card:hover,
+.mascota-card:focus-within {
+  transform: rotate(0deg) translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.mascota-photo {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.mascota-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.mascota-card:hover .mascota-photo img { transform: scale(1.08) rotate(1deg); }
+
+.mascota-species-tag {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  background: var(--coral);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+}
+
+.mascota-body { padding: 1.4rem 1.5rem 1.6rem; }
+
+.mascota-body h2 {
+  font-size: 1.4rem;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.mascota-age {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+}
+
+.mascota-desc { margin-bottom: 0.9rem; }
+
+.mascota-personalidad {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--teal);
+  margin-bottom: 0.6rem;
+}
+
+.mascota-gustos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mascota-gustos li {
+  background: var(--paper-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 560px) {
+  .mascota-card { transform: none !important; }
+}

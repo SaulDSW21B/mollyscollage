@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Perritos | Álbum digital de nuestros recuerdos</title>
+  <meta name="description" content="Un álbum digital cálido y personal dedicado a mis mascotas: conócelas, mira la galería de fotos y revive nuestros recuerdos favoritos.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a href="index.html" class="brand"><span class="paw">🐾</span> Mis Mascotas</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="mascotas.html">Mis mascotas</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="recuerdos.html">Recuerdos</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙</button>
+        <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="hero-eyebrow-icons">🐾 ⭐ ❤️</p>
+        <h1>Mis mascotas</h1>
+        <p class="tagline">Pequeños momentos, grandes recuerdos</p>
+        <p class="lead">Este es un pequeño rincón digital dedicado a mis compañeros de vida: sus fotos, sus historias y todos los momentos que hemos compartido juntos.</p>
+        <a href="mascotas.html" class="btn btn-primary">Conocerlos 🐾</a>
+      </div>
+      <div class="hero-collage" aria-hidden="true">
+        <img src="img/mascota1/foto1.jpg" alt="">
+        <img src="img/mascota2/foto1.jpg" alt="">
+        <img src="img/galeria/foto3.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="preview-section container">
+      <h2 class="reveal">Algunos momentos</h2>
+      <p class="lead reveal">Una pequeña muestra de nuestro álbum, con más fotografías esperando en la galería.</p>
+      <div class="preview-grid">
+        <figure class="reveal"><img src="img/galeria/foto1.jpg" alt="Fotografía del álbum 1" loading="lazy"></figure>
+        <figure class="reveal"><img src="img/galeria/foto2.jpg" alt="Fotografía del álbum 2" loading="lazy"></figure>
+        <figure class="reveal"><img src="img/galeria/foto4.jpg" alt="Fotografía del álbum 3" loading="lazy"></figure>
+        <figure class="reveal"><img src="img/galeria/foto5.jpg" alt="Fotografía del álbum 4" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="home-cta container reveal">
+      <h2>¿Quieres conocer sus historias completas?</h2>
+      <a href="recuerdos.html" class="btn btn-primary">Ver recuerdos ✨</a>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-stats">
+      <span>🐾 3 mascotas</span>
+      <span>📷 10 recuerdos</span>
+      <span>❤️ Muchos momentos</span>
+    </div>
+    <p class="footer-date"></p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

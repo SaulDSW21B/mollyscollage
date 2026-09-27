@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Mascotas | Conoce a mis mascotas</title>
+  <meta name="description" content="Conoce a cada una de mis mascotas: su nombre, edad, personalidad y las cosas que más les gustan.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mascotas.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a href="index.html" class="brand"><span class="paw">🐾</span> Mis Mascotas</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="mascotas.html" aria-current="page">Mis mascotas</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="recuerdos.html">Recuerdos</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙</button>
+        <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header reveal">
+      <h1>Mis mascotas</h1>
+      <p>Cada una tiene su propia personalidad e historia. Aquí te las presento.</p>
+    </section>
+
+    <section class="mascotas-grid" id="mascotas-grid" aria-label="Tarjetas de mascotas">
+      <!-- Las tarjetas se generan automáticamente desde js/mascotas.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-stats">
+      <span>🐾 3 mascotas</span>
+      <span>📷 10 recuerdos</span>
+      <span>❤️ Muchos momentos</span>
+    </div>
+    <p class="footer-date"></p>
+  </footer>
+
+  <button class="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/mascotas.js"></script>
+</body>
+</html>
